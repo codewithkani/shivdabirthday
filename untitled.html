@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happiest Birthday Shivda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Dancing Script', cursive;
+      overflow-x: hidden;
+      background-image:url(back1.jpg) ;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .front-page {
+      background-image: url(back2.jpg); /*Your background */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .front-page h1 {
+      font-size: 3.5rem;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    .open-button {
+      margin-top: 25px;
+      padding: 15px 35px;
+      font-size: 1.5rem;
+      background: #ff69b4;
+      border: none;
+      border-radius: 15px;
+      color: white;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+      box-shadow: 0 0 15px #ff69b4;
+      transition: transform 0.2s;
+    }
+
+    .open-button:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .card-content {
+      display: none;
+      animation: turnPage 2s ease forwards;
+    }
+
+    @keyframes turnPage {
+      from { transform: rotateY(90deg); opacity: 0; }
+      to { transform: rotateY(0); opacity: 1; }
+    }
+
+    .popup {
+      text-align: center;
+      margin: 50px auto;
+      font-size: 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .popup img {
+      margin-top: 20px;
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .celebrate-button {
+      padding: 12px 26px;
+      font-size: 1.4rem;
+      margin: 30px auto;
+      background-color: gold;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      display: block;
+      color: black;
+      font-weight: bold;
+      box-shadow: 0 0 12px gold;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .video-section {
+      display: none;
+      text-align: center;
+      margin: 30px auto;
+    }
+
+    .letter {
+      margin: 30px auto;
+      width: 90%;
+      max-width: 600px;
+      height: 100%;
+      background: url(top-view-love-letters-arrangement_23-2150716563.avif) no-repeat center center;
+      background-size: cover;
+      opacity: 80%;
+      padding: 60px 40px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 1.5rem;
+      line-height: 1.5;
+      border-radius: 10px;
+      position: relative;
+      color:black;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    .quill {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      width: 50px;
+      animation: write 5s ease-in-out forwards;
+    }
+
+    @keyframes write {
+      0% { transform: translateX(0); opacity: 0; }
+      100% { transform: translateX(-10px); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="front-page">
+  <h1>Happiest Birthday Shivda</h1>
+  <button class="open-button" onclick="openCard()">Open Your Card 💌</button>
+</div>
+
+<div class="card-content" id="cardContent">
+  <div class="popup">
+    <p>This one's for you 💐</p>
+    <img src="flower.jpg" alt="Flower bouquet"> <!-- Your flower image -->
+    <button class="celebrate-button" onclick="showVideo()">Let's Celebrate 🎉</button>
+  </div>
+
+  <div class="video-section" id="videoSection">
+    <video width="90%" controls autoplay loop>
+      <source src="video.mp4" type="video/mp4"> <!-- Replace with your video -->
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="letter">
+      Dear Shivda,<br></br>
+      First of all, a very Happy Birthday to you, my little one. 🎉
+      Today is a celebration of someone whose presence in this world—and in my life—means more than words could ever express. You have the kind of heart that not only feels deeply but also heals quietly. You may not always see it, but the warmth you carry inside you makes the world a better place for those lucky enough to be around you.<br></br>
+
+     I hope this birthday brings you all the happiness you deserve, multiplied a thousand times. I pray that every single one of your dreams turns into reality, that your smile never fades, and that your heart always stays as kind and sensitive as it is. May life only offer you the kind of love and care that you give to others so selflessly.<br></br>
+   But while I celebrate you today, I also want to own up to something I’ve carried in my heart for a long time—a deep regret. I’m truly sorry for faking my face in the beginning. I know I should have trusted you enough to show you the real me, but fear and insecurity clouded my judgment. I was scared of being seen and maybe not being accepted. But still, it was wrong. You didn’t deserve that dishonesty, and I can’t tell you how much guilt I’ve felt for not being real from the start<br></br> 
+    Despite all that, you still chose to give me another chance. That’s the kind of person you are—so beautifully forgiving, so incredibly rare. I can’t thank you enough for that. I’m endlessly grateful for your patience, for seeing beyond the surface, and for still choosing to believe in me even when I made it hard to.<br></br>
+ Your heart is the most precious part of you, and I promise never to take it for granted again. If there’s one thing I want to give you on your birthday besides good wishes and smiles, it’s my sincere promise—that I will always be there. In the quiet moments, in the loud celebrations, in every storm and every sunshine—I’ll stand beside you. Not as someone perfect, but as someone real. Someone who sees the light in you and wants nothing more than to protect it.<br></br>
+
+No matter what paths life takes us on, please know this: I’m not going anywhere. You will always have me—someone who respects you, cherishes you, and feels lucky every single day just to know you.<br></br>
+
+So here’s to you, your growth, your laughter, your quiet strength, and the beauty you bring into every space you enter.<br></br>
+And as I always call you—with all my love and a heart full of honesty—<br></br>
+Happy birthday, my little one. 💗<br></br>
+
+ Forever yours,<br></br>
+  Kanha
+    </div>
+  </div>
+</div>
+
+<script>
+  function openCard() {
+    document.querySelector('.front-page').style.display = 'none';
+    const content = document.getElementById('cardContent');
+    content.style.display = 'block';
+  }
+
+  function showVideo() {
+    document.getElementById('videoSection').style.display = 'block';
+  }
+</script>
+
+</body>
+</html>
